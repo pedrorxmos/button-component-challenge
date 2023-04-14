@@ -19,7 +19,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/pedrorxmos/button-component-challenge
+$ git clone https://github.com/pedrorxmos/button-component-challenge.git
 
 # Install dependencies
 $ npm install
