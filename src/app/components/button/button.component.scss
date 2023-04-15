@@ -10,7 +10,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: background .3s;
+  transition: background .3s, box-shadow .3s;
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -162,5 +162,15 @@ button {
 
   &.lg {
     padding: 11px 22px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      background: none;
+      box-shadow: none;
+    }
   }
 }
