@@ -5,12 +5,16 @@ $black: #101011;
 :root, :root.light {
   --default: #E0E0E0;
   --default-dark: #{darken(#E0E0E0, 10)};
+  --default-o10: #{rgba(#E0E0E0, 0.1)};
   --primary: #2962FF;
   --primary-dark: #{darken(#2962FF, 10)};
+  --primary-o10: #{rgba(#2962FF, 0.1)};
   --secondary: #455A64;
   --secondary-dark: #{darken(#455A64, 10)};
+  --secondary-o10: #{rgba(#455A64, 0.1)};
   --danger: #D32F2F;
   --danger-dark: #{darken(#D32F2F, 10)};
+  --danger-o10: #{rgba(#D32F2F, 0.1)};
 
   --bg: #fbfbfb;
   --shadow: #{darken(#fbfbfb, 20)};
@@ -20,12 +24,16 @@ $black: #101011;
 :root.dark {
   --default: #c0c0c0;
   --default-dark: #{darken(#c0c0c0, 10)};
+  --default-o10: #{rgba(#c0c0c0, 0.1)};
   --primary: #507bef;
   --primary-dark: #{darken(#507bef, 10)};
+  --primary-o10: #{rgba(#507bef, 0.1)};
   --secondary: #485359;
   --secondary-dark: #{darken(#485359, 10)};
+  --secondary-o10: #{rgba(#485359, 0.1)};
   --danger: #bf4444;
   --danger-dark: #{darken(#bf4444, 10)};
+  --danger-o10: #{rgba(#bf4444, 0.1)};
 
   --bg: #151a28;
   --shadow: #{darken(#151a28, 30)};

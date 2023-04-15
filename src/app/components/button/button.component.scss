@@ -9,6 +9,8 @@ button {
   border-radius: 6px;
   font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
+  transition: background .3s;
 
   &:hover, &:focus {
     background: var(--default-dark);
@@ -54,5 +56,49 @@ button {
     box-shadow: none;
   }
 
+  &.outlined {
+    background-color: transparent;
+    border: 1px solid var(--text);
+    color: var(--text);
+
+    &:hover, &:focus {
+      background: rgba(var(--text), 0.2);
+    }
+
+    &.default {
+      border-color: var(--text);
+      color: var(--text);
+
+      &:hover, &:focus {
+        background: var(--default);
+      }
+    }
   
+    &.primary {
+      border-color: var(--primary);
+      color: var(--primary);
+
+      &:hover, &:focus {
+        background: var(--primary-o10);
+      }
+    }
+  
+    &.secondary {
+      border-color: var(--secondary);
+      color: var(--secondary);
+
+      &:hover, &:focus {
+        background: var(--secondary-o10);
+      }
+    }
+  
+    &.danger {
+      border-color: var(--danger);
+      color: var(--danger);
+
+      &:hover, &:focus {
+        background: var(--danger-o10);
+      }
+    }
+  }
 }
