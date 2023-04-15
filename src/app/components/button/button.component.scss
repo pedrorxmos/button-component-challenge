@@ -62,7 +62,7 @@ button {
     color: var(--text);
 
     &:hover, &:focus {
-      background: rgba(var(--text), 0.2);
+      background: var(--default);
     }
 
     &.default {
@@ -94,6 +94,47 @@ button {
   
     &.danger {
       border-color: var(--danger);
+      color: var(--danger);
+
+      &:hover, &:focus {
+        background: var(--danger-o10);
+      }
+    }
+  }
+
+  &.text {
+    background-color: transparent;
+    color: var(--text);
+
+    &:hover, &:focus {
+      background: var(--default);
+    }
+
+    &.default {
+      color: var(--text);
+
+      &:hover, &:focus {
+        background: var(--default);
+      }
+    }
+  
+    &.primary {
+      color: var(--primary);
+
+      &:hover, &:focus {
+        background: var(--primary-o10);
+      }
+    }
+  
+    &.secondary {
+      color: var(--secondary);
+
+      &:hover, &:focus {
+        background: var(--secondary-o10);
+      }
+    }
+  
+    &.danger {
       color: var(--danger);
 
       &:hover, &:focus {
