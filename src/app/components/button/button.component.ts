@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'button-component',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ButtonComponent {
 
+  @Input() value?: string;
+  @Input() variant?: string;
+  @Input() disableShadow?: any;
+  @Input() disabled?: any;
+  @Input() startIcon?: string;
+  @Input() endIcon?: string;
+  @Input() size?: string;
+  @Input() color?: string;
 }
