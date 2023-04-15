@@ -1,0 +1,13 @@
+@mixin mq ($value) {
+  @media screen and (min-width: $value) {
+    @content;
+  }
+};
+
+@mixin prefix ($property, $value) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
+};
+
