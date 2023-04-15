@@ -5,11 +5,17 @@ $font-family: 'Noto Sans JP';
   --primary: #2962FF;
   --secondary: #455A64;
   --danger: #D32F2F;
+
+  --bg: #fbfbfb;
+  --text: #101011;
 }
 
 :root.dark {
-  --default: #E0E0E0;
-  --primary: #ff29f4;
-  --secondary: #455A64;
-  --danger: #D32F2F;
+  --default: #c0c0c0;
+  --primary: #507bef;
+  --secondary: #485359;
+  --danger: #bf4444;
+
+  --bg: #121723;
+  --text: #ededf1;
 }
