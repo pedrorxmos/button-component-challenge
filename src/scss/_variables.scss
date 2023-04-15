@@ -1,0 +1,15 @@
+$font-family: 'Noto Sans JP';
+
+:root, :root.light {
+  --default: #E0E0E0;
+  --primary: #2962FF;
+  --secondary: #455A64;
+  --danger: #D32F2F;
+}
+
+:root.dark {
+  --default: #E0E0E0;
+  --primary: #ff29f4;
+  --secondary: #455A64;
+  --danger: #D32F2F;
+}
