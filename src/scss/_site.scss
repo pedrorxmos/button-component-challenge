@@ -1,6 +1,59 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
 
 body {
   background-color: var(--bg);
   font-family: $font-family;
   font-weight: 400;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 3rem;
+  padding: 2rem 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @include mq(700px) {
+    padding: 2rem 2rem;
+  }
+
+  @include mq(1024px) {
+    padding: 2rem 3rem;
+  }
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+
+  @include mq(527px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq(824px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include mq(1142px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
 }

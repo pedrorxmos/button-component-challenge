@@ -39,3 +39,9 @@ $black: #101011;
   --shadow: #{darken(#151a28, 30)};
   --text: #ededf1;
 }
+
+@mixin mq($value) {
+  @media screen and (min-width: $value) {
+    @content;
+  }
+}

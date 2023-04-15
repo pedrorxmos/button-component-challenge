@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
 
-  @Input() value?: string;
+  @Input() value?: string = 'Default';
   @Input() variant?: string;
   @Input() disableShadow?: any;
   @Input() disabled?: any;
