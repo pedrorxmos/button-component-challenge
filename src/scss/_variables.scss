@@ -4,22 +4,30 @@ $black: #101011;
 
 :root, :root.light {
   --default: #E0E0E0;
+  --default-dark: #{darken(#E0E0E0, 10)};
   --primary: #2962FF;
+  --primary-dark: #{darken(#2962FF, 10)};
   --secondary: #455A64;
+  --secondary-dark: #{darken(#455A64, 10)};
   --danger: #D32F2F;
+  --danger-dark: #{darken(#D32F2F, 10)};
 
   --bg: #fbfbfb;
+  --shadow: #{darken(#fbfbfb, 20)};
   --text: #101011;
 }
 
 :root.dark {
   --default: #c0c0c0;
+  --default-dark: #{darken(#c0c0c0, 10)};
   --primary: #507bef;
+  --primary-dark: #{darken(#507bef, 10)};
   --secondary: #485359;
+  --secondary-dark: #{darken(#485359, 10)};
   --danger: #bf4444;
+  --danger-dark: #{darken(#bf4444, 10)};
 
-  --bg: #121723;
+  --bg: #151a28;
+  --shadow: #{darken(#151a28, 30)};
   --text: #ededf1;
 }
-
-$shadow: var(--bg);
