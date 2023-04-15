@@ -11,9 +11,18 @@ button {
   font-weight: 500;
   cursor: pointer;
   transition: background .3s;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
 
   &:hover, &:focus {
     background: var(--default-dark);
+  }
+
+  .icon {
+    font-size: 14px;
+    font-weight: inherit;
   }
 
   &.default {
